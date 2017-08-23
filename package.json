@@ -1,12 +1,14 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "aksharpatel47-site",
+  "description": "My site + blog using gatsbyjs.",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Akshar Patel <akshar.patel.47@gmail.com>",
   "dependencies": {
     "gatsby": "^1.8.10",
     "gatsby-link": "^1.6.5",
-    "gatsby-plugin-react-helmet": "^1.0.1"
+    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-typography": "^1.7.6",
+    "typography-theme-bootstrap": "^0.15.10"
   },
   "keywords": [
     "gatsby"
