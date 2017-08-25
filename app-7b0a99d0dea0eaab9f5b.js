@@ -1110,7 +1110,7 @@ webpackJsonp([15178676390636814000],{
 	
 	var pathPrefix = "/";
 	if ((undefined)) {
-	  pathPrefix = ("") + "/";
+	  pathPrefix = ("/aksharpatel47.github.io") + "/";
 	}
 	
 	if ("serviceWorker" in navigator) {
