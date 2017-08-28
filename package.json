@@ -1,0 +1,30 @@
+{
+  "name": "aksharpatel47-site",
+  "description": "My site + blog using gatsbyjs.",
+  "version": "1.0.0",
+  "author": "Akshar Patel <akshar.patel.47@gmail.com>",
+  "dependencies": {
+    "gatsby": "^1.8.10",
+    "gatsby-link": "^1.6.5",
+    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-typography": "^1.7.6",
+    "gatsby-source-filesystem": "^1.4.4",
+    "gatsby-transformer-remark": "^1.7.2",
+    "typography-theme-bootstrap": "^0.15.10"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.5.2"
+  }
+}
