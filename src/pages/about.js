@@ -1,14 +1,14 @@
-import React from "react";
+import React from "react"
+import AksharPatel from "../images/me.jpg";
+import styles from "./style.module.css";
+import { SocialButton } from "../components/buttons/social-button";
 import GithubSVG from "../images/logos/github-logo.svg";
 import LinkedInSVG from "../images/logos/linkedin.svg";
 import TwitterSVG from "../images/logos/twitter.svg";
 import MailSVG from "../images/logos/mail.svg";
-import styles from "./style.module.css";
-import { SocialButton } from "../components/buttons/social-button";
-import AksharPatel from "../images/me.jpg";
 
-const IndexPage = () => (
-  <div style={{ textAlign: "center" }}>
+const AboutPage = () => (
+	<div style={{ textAlign: "center" }}>
     <img
       style={{
         height: "150px",
@@ -64,6 +64,6 @@ const IndexPage = () => (
       </li>
     </ul>
   </div>
-);
+)
 
-export default IndexPage;
+export default AboutPage
