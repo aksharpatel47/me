@@ -5,12 +5,11 @@ module.exports = {
     title: `Akshar's Blog`
   },
   plugins: [
-    `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`
+        pathToConfigModule: `./src/utils/typography.js`
       }
     },
     {
@@ -21,13 +20,12 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-emotion`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Akshar Patel's Blog",
-        short_name: "Akshar Patel",
+        name: "Akshar's Blog",
+        short_name: "AksharPatel",
         start_url: "/",
         background_color: "#f7f0eb",
         theme_color: "#3F51B5",

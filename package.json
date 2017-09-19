@@ -11,27 +11,22 @@
     "gatsby-plugin-manifest": "^1.0.7",
     "gatsby-plugin-offline": "^1.0.9",
     "gatsby-plugin-react-helmet": "1.0.6",
-    "gatsby-plugin-typescript": "^1.4.8",
     "gatsby-plugin-typography": "1.7.9",
     "gatsby-source-filesystem": "1.4.12",
     "gatsby-transformer-remark": "1.7.7",
-    "typescript": "^2.5.2",
-    "typography-theme-bootstrap": "0.16.7"
+    "typography-theme-kirkham": "^0.16.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@types/react": "^16.0.5",
-    "@types/react-dom": "^15.5.4",
     "prettier": "^1.7.0"
   }
 }

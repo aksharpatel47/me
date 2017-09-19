@@ -4,20 +4,13 @@ import hs from "./main-header.module.css";
 
 export const MainHeader = () => (
   <header className={hs.header}>
+    <Link className={hs.link} to="/">
+      <h1>Akshar's Blog</h1>
+    </Link>
     <ul>
       <li>
         <Link activeClassName={hs.activeLink} className={hs.link} to="/about">
           About
-        </Link>
-      </li>
-      <li>
-        <Link
-          exact={true}
-          activeClassName={hs.activeLink}
-          className={hs.link}
-          to="/"
-        >
-          Home
         </Link>
       </li>
       <li>

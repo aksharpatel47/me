@@ -1,10 +1,6 @@
-import * as React from "react";
+import React from "react";
 
-export const SocialButton: React.StatelessComponent<ISocialButton> = ({
-  href,
-  imageSrc,
-  alt
-}) => (
+export const SocialButton = ({ href, imageSrc, alt }) => (
   <a
     href={href}
     style={{ padding: "0.5rem" }}
@@ -14,9 +10,3 @@ export const SocialButton: React.StatelessComponent<ISocialButton> = ({
     <img style={{ width: "60px", height: "60px" }} src={imageSrc} alt={alt} />
   </a>
 );
-
-interface ISocialButton {
-  href: string;
-  imageSrc: string;
-  alt: string;
-}

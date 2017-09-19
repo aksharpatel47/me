@@ -6,7 +6,6 @@ import { MainHeader } from "../components/headers/main-header";
 const Header = () => (
   <div
     style={{
-      backgroundColor: "#3F51B5",
       marginBottom: "1.45rem"
     }}
   >
@@ -14,8 +13,8 @@ const Header = () => (
   </div>
 );
 
-const TemplateWrapper = ({ children }) => (
-  <div>
+export default ({ children }) => (
+  <div style={{ maxWidth: "700px", margin: "0 auto" }}>
     <Helmet
       title="Akshar's Blog"
       meta={[
@@ -29,8 +28,6 @@ const TemplateWrapper = ({ children }) => (
     <Header />
     <div
       style={{
-        margin: "0 auto",
-        maxWidth: 960,
         padding: "0px 1.0875rem 1.45rem",
         paddingTop: 0
       }}
@@ -39,9 +36,3 @@ const TemplateWrapper = ({ children }) => (
     </div>
   </div>
 );
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
-};
-
-export default TemplateWrapper;
