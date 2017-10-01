@@ -1,10 +1,9 @@
-const path = require("path");
-
 module.exports = {
   siteMetadata: {
     title: `Akshar's Blog`
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -15,11 +14,51 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: path.resolve(__dirname, "src/pages"),
+        path: `${__dirname}/src/pages`,
         name: `pages`
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/blogs`,
+        name: `blogs`
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              // Class prefix for <pre> tags containing syntax highlighting;
+              // defaults to 'language-' (eg <pre class="language-js">).
+              // If your site loads Prism into the browser at runtime,
+              // (eg for use with libraries like react-live),
+              // you may use this to prevent Prism from re-processing syntax.
+              // This is an uncommon use-case though;
+              // If you're unsure, it's best to use the default value.
+              classPrefix: "language-"
+            }
+          }
+          // {
+          //   resolve: `gatsby-remark-images`,
+          //   options: {
+          //     // It's important to specify the maxWidth (in pixels) of
+          //     // the content container as this plugin uses this as the
+          //     // base for generating different widths of each image.
+          //     maxWidth: 590,
+          //     // Remove the default behavior of adding a link to each
+          //     // image.
+          //     linkImagesToOriginal: false
+          //   }
+          // }
+        ]
+      }
+    },
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,

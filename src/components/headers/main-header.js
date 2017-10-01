@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "gatsby-link";
-import hs from "./main-header.module.css";
+import React from "react"
+import Link from "gatsby-link"
+import hs from "./main-header.module.css"
 
 export const MainHeader = () => (
   <header className={hs.header}>
@@ -13,15 +13,6 @@ export const MainHeader = () => (
           About
         </Link>
       </li>
-      <li>
-        <Link
-          activeClassName={hs.activeLink}
-          className={hs.link}
-          to="/projects"
-        >
-          Projects
-        </Link>
-      </li>
     </ul>
   </header>
-);
+)

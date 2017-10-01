@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { MainHeader } from "../components/headers/main-header";
+require("prismjs/themes/prism-solarizedlight.css");
 
 const Header = () => (
   <div

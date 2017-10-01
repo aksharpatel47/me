@@ -1,6 +1,7 @@
 ---
 title: "Beginning Blogging Journey"
-date: "2016-02-13"
+date: "2016-09-13"
+published: true
 ---
 
 I love reading blogs. It's a great way to learn from experts in different fields and to get to know their unique viewpoints. I always wanted to blog. I even started to blog a couple of times in the past but abandoned the blogs as I didn't think it would be worth the time and that I didn't consider myself an expert.
