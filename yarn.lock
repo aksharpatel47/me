@@ -3440,9 +3440,9 @@ gatsby-1-config-css-modules@^1.0.4:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-link@1.6.17:
-  version "1.6.17"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.17.tgz#4182d608798b72fd4ec716f118c4d1f649b214bb"
+gatsby-link@1.6.18:
+  version "1.6.18"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.18.tgz#11f043d065758a00e35e05743c27d22569e296bf"
   dependencies:
     babel-runtime "^6.26.0"
     prop-types "^15.5.8"
@@ -3584,6 +3584,15 @@ gatsby-transformer-remark@1.7.15:
     underscore.string "^3.3.4"
     unist-util-select "^1.5.0"
     unist-util-visit "^1.1.1"
+
+gatsby-transformer-sharp@^1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.7.tgz#350a564ea6c4bbb17f60c524687df2790eb12e9b"
+  dependencies:
+    babel-runtime "^6.26.0"
+    bluebird "^3.5.0"
+    fs-extra "^4.0.1"
+    image-size "^0.6.0"
 
 gatsby@1.9.50:
   version "1.9.50"
@@ -4352,6 +4361,10 @@ ieee754@^1.1.4:
 image-size@^0.5.1:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
+
+image-size@^0.6.0:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.1.tgz#98122a562d59dcc097ef1b2c8191866eb8f5d663"
 
 imagemin-pngquant@^5.0.0:
   version "5.0.1"

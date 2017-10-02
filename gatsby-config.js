@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -43,22 +44,20 @@ module.exports = {
               // If you're unsure, it's best to use the default value.
               classPrefix: "language-"
             }
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 740
+            }
           }
-          // {
-          //   resolve: `gatsby-remark-images`,
-          //   options: {
-          //     // It's important to specify the maxWidth (in pixels) of
-          //     // the content container as this plugin uses this as the
-          //     // base for generating different widths of each image.
-          //     maxWidth: 590,
-          //     // Remove the default behavior of adding a link to each
-          //     // image.
-          //     linkImagesToOriginal: false
-          //   }
-          // }
         ]
       }
     },
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,

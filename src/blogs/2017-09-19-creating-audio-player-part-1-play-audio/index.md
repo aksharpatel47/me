@@ -18,7 +18,7 @@ Let's start by creating a single page app. Add any mp3 file to the project. You 
 
 Setup the Storyboard ViewController as follows:
 
-![Blog](/blog-images/audio-player-part-1-initial.jpeg)
+![Blog](audio-player-part-1-initial.jpeg)
 
 Scaffold the ```ViewController.swift``` file as below:
 
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 }
 ```
 
-<br/>
+  <br/>
 
 Make sure you register the action functions in the ```ViewController.swift``` file with their storyboard counterpart. We are now ready to learn how to play audio in an iOS app using Swift 4.
 
