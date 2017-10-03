@@ -3,7 +3,7 @@ title: "Creating an Audio App - Playing Audio using Swift 4.0 on iOS"
 date: "2017-09-19"
 update: "2017-09-19"
 published: true
-tags: ["Swift","XCode","Audio","AVAudioPlayer","AVPlayer","iOS"]
+tags: ["Swift","Audio","AVAudioPlayer","AVPlayer","iOS"]
 ---
 
 I recently had to create an audio player and recorder in an app that I was commissioned to build. The Audio Recorder+Player can record audio and, play local as well as remote files. I'll share whatever I have learned in this 3 part tutorial series on creating an Audio Player & Recorder.
@@ -18,7 +18,7 @@ Let's start by creating a single page app. Add any mp3 file to the project. You 
 
 Setup the Storyboard ViewController as follows:
 
-![Blog](audio-player-part-1-initial.jpeg)
+![Blog](audio-app-part-1-initial.jpeg)
 
 Scaffold the ```ViewController.swift``` file as below:
 
