@@ -14,7 +14,7 @@ const Header = () => (
 );
 
 export default ({ children }) => (
-  <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+  <div style={{ maxWidth: "750px", margin: "0 auto" }}>
     <Helmet
       title="Akshar's Blog"
       meta={[
