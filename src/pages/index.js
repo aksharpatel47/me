@@ -14,7 +14,10 @@ export default ({ data }) => {
               {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
             </Link>
           </h3>
-          <p>{node.excerpt}</p>
+          <p>
+            {node.excerpt}
+            <Link to={node.fields.slug}>more.</Link>
+          </p>
         </div>
       ))}
     </div>
