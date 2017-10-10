@@ -20,16 +20,26 @@ $ npm i -g gatsby-cli
 // Create a starter blog
 $ gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog
 // See the blog in action
-$ cd gatsby-blog && gatsby develop
+$ cd gatsby-blog && npm run develop
 ```
 
 Go to ```localhost:8000``` on your favorite browser and you'll be greeted with the below screen.
 
 ![Gatsby Demo Blog](gatsby-demo-blog.jpeg)
 
-<br/>
+### Building for Production
 
-### Hosting the site on AWS S3
+Running the ```gatsby develop``` command is great for making changes and adding content to your website. However, you'll need a production build when you want to upload your site to AWS S3. Run:
+
+```
+$ npm run build
+```
+
+You'll find that the production build of your site is ready in the ```public``` folder.
+
+### Hosting on AWS S3
+
+The next step is to upload the contents of the public folder on AWS S3. If you don't have an AWS account create one. You'll have access to AWS free tier for the next 12 months and you'll able to host the site practically free.
 
 ### Cloudfront Distribution
 
