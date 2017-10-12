@@ -1,9 +1,9 @@
-import React from "react";
-import { rhythm } from "../utils/typography";
-import Link from "gatsby-link";
+import React from "react"
+import { rhythm } from "../utils/typography"
+import Link from "gatsby-link"
 
 export default ({ data }) => {
-  console.log(data);
+  console.log(data)
   return (
     <div>
       <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
@@ -21,8 +21,8 @@ export default ({ data }) => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query IndexQuery {
@@ -46,4 +46,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

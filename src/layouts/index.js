@@ -1,17 +1,17 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { MainHeader } from "../components/headers/main-header";
-require("prismjs/themes/prism-solarizedlight.css");
+import React from "react"
+import Helmet from "react-helmet"
+import { MainHeader } from "../components/headers/main-header"
+require("prismjs/themes/prism-solarizedlight.css")
 
 const Header = () => (
   <div
     style={{
-      marginBottom: "1.45rem"
+      marginBottom: "1.45rem",
     }}
   >
     <MainHeader />
   </div>
-);
+)
 
 export default ({ children }) => (
   <div style={{ maxWidth: "750px", margin: "0 auto" }}>
@@ -20,7 +20,7 @@ export default ({ children }) => (
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" },
-        { name: "viewport", content: "width=device-width, initial-scale=1.0" }
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       ]}
     >
       <html lang="en" />
@@ -29,10 +29,10 @@ export default ({ children }) => (
     <div
       style={{
         padding: "0px 1.0875rem 1.45rem",
-        paddingTop: 0
+        paddingTop: 0,
       }}
     >
       {children()}
     </div>
   </div>
-);
+)

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Akshar's Blog`
+    title: `Akshar's Blog`,
   },
   plugins: [
     `gatsby-plugin-catch-links`,
@@ -9,22 +9,22 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `./src/utils/typography.js`
-      }
+        pathToConfigModule: `./src/utils/typography.js`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: `pages`
-      }
+        name: `pages`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/blogs`,
-        name: `blogs`
-      }
+        name: `blogs`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -42,8 +42,8 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-"
-            }
+              classPrefix: "language-",
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -51,11 +51,11 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 1100
-            }
-          }
-        ]
-      }
+              maxWidth: 1100,
+            },
+          },
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     {
@@ -75,15 +75,15 @@ module.exports = {
             // you can reference them here
             src: `/favicons/me-192.jpg`,
             sizes: `192x192`,
-            type: `image/jpg`
+            type: `image/jpg`,
           },
           {
             src: `/favicons/me-512.jpg`,
             sizes: `512x512`,
-            type: `image/jpg`
-          }
-        ]
-      }
-    }
-  ]
-};
+            type: `image/jpg`,
+          },
+        ],
+      },
+    },
+  ],
+}

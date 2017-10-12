@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export const SocialButton = ({ href, imageSrc, alt }) => (
   <a
@@ -9,4 +9,4 @@ export const SocialButton = ({ href, imageSrc, alt }) => (
   >
     <img style={{ width: "60px", height: "60px" }} src={imageSrc} alt={alt} />
   </a>
-);
+)

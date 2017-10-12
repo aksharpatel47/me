@@ -1,13 +1,13 @@
 import React from "react"
 import AksharPatel from "../images/me.jpg"
-import {SocialButton} from "../components/buttons/social-button"
+import { SocialButton } from "../components/buttons/social-button"
 import GithubSVG from "../images/logos/github-logo.svg"
 import LinkedInSVG from "../images/logos/linkedin.svg"
 import TwitterSVG from "../images/logos/twitter.svg"
 import MailSVG from "../images/logos/mail.svg"
 
 const AboutPage = () => (
-  <div style={{textAlign: "center"}}>
+  <div style={{ textAlign: "center" }}>
     <img
       style={{
         height: "150px",
@@ -20,7 +20,7 @@ const AboutPage = () => (
       alt="Akshar Patel"
     />
     <p>
-      Please bear while I transfer my blog from Jekyll to Gatsby.<br/>Thank you
+      Please bear while I transfer my blog from Jekyll to Gatsby.<br />Thank you
       for understanding.
     </p>
     <p>In the meantime, you can visit me at: </p>
@@ -61,7 +61,7 @@ const AboutPage = () => (
         />
       </li>
     </ul>
-    <br/>
+    <br />
     <h3>Thank You for Visiting.</h3>
   </div>
 )
