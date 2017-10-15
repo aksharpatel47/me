@@ -83,7 +83,7 @@ The code becomes very ugly very fast. It becomes quite verbose as well. At this 
 
 ### Solution
 
-The solution is to catch the error at the promise level
+The solution is to catch the error at the promise level:
 
 ```javascript
 async function getData() {
@@ -122,7 +122,7 @@ async function createUser(
   }).catch ((err) => {
     // Handle error here
   })
-  
+
   res.sendStatus(201)
 }
 ```
