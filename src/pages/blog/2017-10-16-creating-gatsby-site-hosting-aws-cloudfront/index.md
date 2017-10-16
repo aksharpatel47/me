@@ -1,6 +1,6 @@
 ---
 title: "Hosting a Gatsby Static Site on AWS S3 and Cloudfront"
-date: "2017-10-01"
+date: "2017-10-16"
 published: true
 ---
 
