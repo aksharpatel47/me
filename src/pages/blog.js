@@ -1,3 +1,3 @@
 import React from 'react'
 
-export default () => <div>This will be where the blog will go.</div>
+export default () => <div>Placeholder for blogs</div>

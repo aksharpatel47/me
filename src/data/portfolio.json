@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Spotter",
+      "description": "Social app for Travel",
+      "duration": "2.5 years",
+      "team": 8,
+      "role": "CTO & Full Stack Dev",
+      "tech": [
+        "Javascript",
+        "Typescript",
+        "Node.js",
+        "Postgres",
+        "Redis",
+        "GraphQL",
+        "React.js",
+        "Apollo",
+        "Swift",
+        "iOS",
+        "AWS"
+      ]
+    },
+    {
+      "title": "ATMA",
+      "description": "ATtendance MAnagement Enterprise App",
+      "duration": "1 year",
+      "team": 2,
+      "role": "Creator",
+      "tech": ["Javascript", "Typescript", "Angular.js"]
+    },
+    {
+      "title": "Arjun's Last Lesson",
+      "description": "Game based on the legend of Arjun",
+      "duration": "1 year",
+      "team": 1,
+      "role": "Creator",
+      "tech": ["Javascript", "Typescript", "Chrome", "Phaser.js"]
+    }
+  ]
+}
