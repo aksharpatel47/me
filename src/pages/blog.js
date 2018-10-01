@@ -4,6 +4,7 @@ import { graphql, Link } from 'gatsby'
 
 export default ({ data }) => (
   <Layout>
+    <h2>Blog</h2>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <div key={node.id}>
         <Link to={node.fields.slug}>
