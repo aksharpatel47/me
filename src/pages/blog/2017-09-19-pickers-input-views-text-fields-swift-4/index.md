@@ -151,12 +151,7 @@ func setupUI() {
 
 The resulting app will run as below:
 
-<div style="text-align: center">
-  <video width="350px" controls>
-    <source src="./date-picker-input-view-result.m4v" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FKSkBX0rLKU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <br />
 <br />
@@ -231,12 +226,7 @@ Let's refresh the terminology related to UIPickerView here. Components in UIPick
 
 That's all there is to using UIPickerView and UIDatePicker as input views to the UITextField. The final app should function as below:
 
-<div style="text-align: center">
-  <video width="350px" controls>
-    <source src="/blog-videos/date-picker-final-result.m4v" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LoS92CNUOtU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <br />
 <br />
