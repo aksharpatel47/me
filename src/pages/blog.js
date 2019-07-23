@@ -27,7 +27,6 @@ export const query = graphql`
             date
             update
             published
-            _PARENT
           }
           excerpt
           fields {
