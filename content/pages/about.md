@@ -63,7 +63,7 @@ _Graduating in December 2019_
 - Perception in Robotics
 
 **Thesis**
-Helping visually impaired people shop physically in stores. [Read More](/pages/portfolio)
+Improving accessibility in retail stores using computer vision and natural language processing. [Read More](/pages/portfolio)
 
 ### Online MOOCs
 
@@ -81,7 +81,7 @@ Helping visually impaired people shop physically in stores. [Read More](/pages/p
 ### MBA in Marketing & Operations from [LBSIM](https://www.lbsim.ac.in/)
 _2010-2012_
 
-### BE in Information 
+### Bachelor of Engineering in Information Technology
 _2006-2010_
 
 ## Talks
