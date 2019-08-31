@@ -81,7 +81,7 @@ Improving accessibility in retail stores using computer vision and natural langu
 ### MBA in Marketing & Operations from [LBSIM](https://www.lbsim.ac.in/)
 _2010-2012_
 
-### Bachelor of Engineering in Information Technology
+### BE in Information Technology from [LDCE](http://ldce.ac.in/)
 _2006-2010_
 
 ## Talks
