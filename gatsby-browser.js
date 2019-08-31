@@ -1,8 +1,4 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+'use strict';
 
-// You can delete this file if you're not using it
-require('prismjs/themes/prism-solarizedlight.css')
+require('./src/assets/scss/init.scss');
+require('./static/css/prismjs/theme.min.css');
