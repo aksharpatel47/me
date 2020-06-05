@@ -17,7 +17,7 @@ description: "Android has Spinners to restrict users to a particular set of valu
 
 Android has Spinners to restrict users to a particular set of values in a form. Limiting the user to a set of values when entering data in a text field is not natively supported in iOS. However, UIPickerView or UIDatePicker can be configured as input view to a text field to achieve this functionality. We'll explore this idea further in this blog post.
 
-### Initial Setup
+## Initial Setup
 
 Create a new single page app with Swift as the language in XCode. Setup the UI of the view controller in storyboard as follows:
 
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
 
 <br/>
 
-### Date Picker as Input View
+## Date Picker as Input View
 
 Let's start implementing the `datePicker`, and `accessoryToolbar` computed properties.
 
@@ -165,7 +165,7 @@ The resulting app will run as below:
 <br />
 <br />
 
-### UIPickerView as input view to UITextField
+## UIPickerView as input view to UITextField
 
 Setting up UIPickerView as an input view to UITextField is just as easy but with a little bit more boilerplate code.
 
@@ -231,7 +231,7 @@ extension ViewController: UIPickerViewDelegate {
 
 Let's refresh the terminology related to UIPickerView here. Components in UIPickerView mean the number of columns to display. Since we just want the one column, we've hardcoded the return value of `func numberOfComponents(in: UIPickerView)` to be 1.
 
-### In The End
+## In The End
 
 That's all there is to using UIPickerView and UIDatePicker as input views to the UITextField. The final app should function as below:
 

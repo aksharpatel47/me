@@ -2,14 +2,13 @@
 title: 'Creating an Audio App - Playing Audio using Swift 4.0 on iOS'
 date: '2017-09-19'
 update: '2017-09-19'
-template: "post"
 draft: false
-slug: "/posts/creating-audio-app-swift-4.0-ios/"
-category: "tutorial"
+category: 
+  - "Tutorial"
 tags:
-  - "swift"
-  - "audio"
-  - "ios"
+  - "Swift"
+  - "Audio"
+  - "iOS"
 description: "I recently had to create an audio player and recorder in an app that I was commissioned to build. The Audio Recorder+Player can record audio and, play local as well as remote files. I'll share whatever I have learned in this tutorial series on creating an Audio Player & Recorder."
 ---
 

@@ -1,13 +1,12 @@
 ---
 title: "Correctly handle async function errors in Javascript"
 date: "2017-10-15"
-published: true
 template: "post"
 draft: false
 slug: "/posts/handle-async-function-javascript/"
 category: "tutorial"
 tags:
-  - "Javascript"
+  - "JavaScript"
   - "async"
 description: "How we write asynchronous code in JavaScript has changed drastically in recent years. We went from callback to promises and now we're in the sweet async-await land. With tools such as Typescript allowing developers to use async functions to target even es3 supported browsers, the adoption of async functions is only going to increase."
 ---
