@@ -1,4 +1,4 @@
-name: Build Main Branch
+name: Create Docker Image
 on: workflow_dispatch
 jobs:
   build:
