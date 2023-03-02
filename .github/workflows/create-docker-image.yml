@@ -21,4 +21,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/me:{{ env.VERSION }}
+          tags: ghcr.io/${{ github.repository_owner }}/me:${{ github.ref_name }}-${{ env.VERSION }}
