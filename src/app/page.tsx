@@ -25,6 +25,14 @@ export default function Home() {
         >
           LinkedIn
         </a>
+        <br />
+        <a
+          className={styles.code}
+          href="mailto:akshar.patel.47@gmail.com"
+          target="_blank"
+        >
+          Email
+        </a>
       </nav>
     </main>
   );
