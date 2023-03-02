@@ -1,7 +1,13 @@
 name: Create Docker Image
-on: workflow_dispatch
+run-name: Create Docker Image from ${{ github.ref_name }}. Build No - ${{ github.run_number }}
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 jobs:
   build:
+    name: Build & Push Docker Image
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,12 +19,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Get Version From Package.json
-        run: echo "VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/me:${{ github.ref_name }}-${{ env.VERSION }}
+          tags: ghcr.io/${{ github.repository_owner }}/me:${{ github.ref_name }}-${{ github.run_number }}
