@@ -9,6 +9,23 @@ export default function Home() {
     <main className={styles.card}>
       <h1>Akshar Patel</h1>
       <h2>Staff Software Engineer</h2>
+      <nav>
+        <a
+          className={styles.code}
+          href="https://github.com/aksharpatel47"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        <br />
+        <a
+          className={styles.code}
+          href="https://www.linkedin.com/in/aksharpatel47"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </nav>
     </main>
   );
 }
