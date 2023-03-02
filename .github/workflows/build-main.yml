@@ -1,8 +1,5 @@
 name: Build Main Branch
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,10 +13,12 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Get Version From Package.json
+        run: echo "VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/me:latest
+          tags: ghcr.io/${{ github.repository_owner }}/me:{{ env.VERSION }}
