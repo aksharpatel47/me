@@ -33,6 +33,14 @@ export default function Home() {
         >
           Email
         </a>
+        <br />
+        <a
+          className={styles.code}
+          href="https://twitter.com/aksharpatel47"
+          target="_blank"
+        >
+          Twitter
+        </a>
       </nav>
     </main>
   );
