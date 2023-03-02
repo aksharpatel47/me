@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={styles.card}>
+    <main className={styles.main}>
       <h1>Akshar Patel</h1>
       <h2>Staff Software Engineer</h2>
       <nav>
