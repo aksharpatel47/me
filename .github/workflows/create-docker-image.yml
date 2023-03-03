@@ -43,6 +43,6 @@ jobs:
           CHART_IMAGE_TAG: ${{ env.IMAGE_TAG }}
         with:
           repository: aksharpatel47/kube-charts
-          event: [image_push]
+          event: image_push
           
         
