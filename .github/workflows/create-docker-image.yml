@@ -5,6 +5,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+
+permissions: read-all|write-all
+
 jobs:
   build:
     name: Build & Push Docker Image
