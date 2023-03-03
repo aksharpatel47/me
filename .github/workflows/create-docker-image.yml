@@ -6,8 +6,6 @@ on:
       - main
   workflow_dispatch:
 
-permissions: read-all|write-all
-
 jobs:
   build:
     name: Build & Push Docker Image
@@ -38,13 +36,13 @@ jobs:
           push: true
           tags: ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
       - name: update image tag in kube-charts
-        run: |
-          sed -i "s|ghcr.io/aksharpatel47/me:.*|ghcr.io/aksharpatel47/me:${{ github.IMAGE_TAG }}|g" kube-charts/me/base/deployment.yml
-          (cd kube-charts && git config --global user.email akshar.patel.47@gmail.com)
-          (cd kube-charts && git config --global user.name aksharpatel47)
-          (cd kube-charts && git add me/base/deployment.yml)
-          (cd kube-charts && git commit -m "Update image tag for me deployment to ${{ github.IMAGE_TAG }}")
-          (cd kube-charts && git push origin main)
-          
+        uses: passeidireto/trigger-external-workflow-action@main
+        env:
+          CHART_PATH: me/base/deployment.yml
+          CHART_IMAGE_NAME: ${{ env.IMAGE_NAME }}
+          CHART_IMAGE_TAG: ${{ env.IMAGE_TAG }}
+        with:
+          repository: aksharpatel47/kube-charts
+          event: [image_push]
           
         
