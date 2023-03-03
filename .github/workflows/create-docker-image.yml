@@ -33,7 +33,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ github.IMAGE_NAME }}:${{ github.IMAGE_TAG }}
+          tags: ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
       - name: update image tag in kube-charts
         run: |
           sed -i "s|ghcr.io/aksharpatel47/me:.*|ghcr.io/aksharpatel47/me:${{ github.IMAGE_TAG }}|g" kube-charts/me/base/deployment.yml
